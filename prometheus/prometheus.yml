@@ -1,0 +1,12 @@
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: [
+        'app:9200',
+      ]
+        labels:
+          service: 'app-exporter'
+          group: 'testing'
+          name: 'app-exporter'

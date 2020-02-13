@@ -1,0 +1,19 @@
+{
+  "name": "grafana-prometheus-node-js-example-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pavlovdog_ <pavlovdog.moscow@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gaussian": "^1.1.0",
+    "prom-client": "^11.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
