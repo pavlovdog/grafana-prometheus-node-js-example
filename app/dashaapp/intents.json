@@ -1,0 +1,37 @@
+{
+  "includes": {
+    "competitor": [
+      "google",
+      "oracle",
+      "microsoft",
+      "google has",
+      "microsoft has",
+      "google is cheaper i want discount",
+      "microsoft way cheaper",
+      "google has",
+      "microsoft has",
+      "this feature google has",
+      "microsoft has this"
+    ],
+    "discount": [
+      "I want a discount",
+      "i need a discount",
+      "could you give me discount",
+      "google is cheaper i want discount",
+      "microsoft way chaper than you I want discount",
+      "discount",
+      "discount please",
+      "need a discount",
+      "can I have a discount"
+    ],
+    "return_shipment": [
+      "how do I return my shipment",
+      "i want to return a parcel",
+      "how to return parcel",
+      "how to return shipment",
+      "how to return my shipment"
+    ]
+  },
+  "excludes": {
+  }
+}

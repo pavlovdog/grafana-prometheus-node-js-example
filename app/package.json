@@ -9,6 +9,7 @@
   "author": "pavlovdog_ <pavlovdog.moscow@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@dasha.ai/platform-sdk": "^0.7.0-beta.2",
     "express": "^4.17.1",
     "gaussian": "^1.1.0",
     "prom-client": "^11.5.3"
