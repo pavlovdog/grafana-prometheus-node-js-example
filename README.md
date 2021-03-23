@@ -2,12 +2,15 @@
 
 ## Run
 
+Change this to your API key and phone.
+```
+const phone = "<YOUR_PHONE>";
+const apiKey = "<YOUR_API_KEY>";
+```
+
 ```bash
 docker-compose up -d
 ```
 
 Then open the http://localhost:3000, login (admin:illchangeitanyway) and check out the results!
 
-Full tutorial you can find in my blog - [https://sergeypotekhin.com/](http://sergeypotekhin.com/visualizing-data-from-the-node-js-app/?utm_source=github&utm_medium=readme&utm_campaign=repos).
-
-See ya!

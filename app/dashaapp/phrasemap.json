@@ -7,14 +7,8 @@
             "variation": 4
         },
         "phrases": {
-            "hello": [{ "text": "Hello, please enter your pin code and press sharp." }],
-            "incorrect": [{ "text": "Pin code is incorrect." }],
-            "correct": [{ "text": "Pin code is correct." }]
         },
         "macros": {
-            "hello": {},
-            "incorrect": {},
-            "correct": {}
         }
     }
 }
