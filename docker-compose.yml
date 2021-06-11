@@ -30,6 +30,9 @@ services:
     ports:
       - '9200:9200'
     command: 'index.js'
+    environment:
+      DASHA_APIKEY: 
+      PHONE: 
 
 
 volumes:

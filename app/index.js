@@ -3,11 +3,7 @@ const express = require("express");
 const dasha = require("@dasha.ai/sdk");
 
 //Test phone number and your API key
-const phone = "<YOUR_PHONE>";
-const apiKey = "<YOUR_API_KEY>";
-
-if (!phone) throw Error("Please set test phone number to call to.");
-if (!apiKey) throw Error("Dasha API key is not set.");
+const phone = process.env.PHONE;
 
 const registry = new client.Registry();
 const gauge = new client.Gauge({
@@ -40,9 +36,7 @@ function reportEvent({ category }) {
 }
 
 async function runDashaApp(config, phone) {
-  const app = await dasha.deploy("./dashaapp", {
-    account: { server: "app.us.dasha.ai", apiKey },
-  });
+  const app = await dasha.deploy("./dashaapp", {groupName: "Default"});
 
   app.connectionProvider = async (conv) =>
     conv.input.phone === "chat"
@@ -50,7 +44,7 @@ async function runDashaApp(config, phone) {
       : dasha.sip.connect(new dasha.sip.Endpoint(config));
 
   app.setExternal("reportEvent", reportEvent);
-
+  app.start();
   if (phone) {
     console.log("Trying to call via SIP");
 
@@ -83,9 +77,6 @@ async function runDashaApp(config, phone) {
 
       const result = await conv.execute();
       console.log(result.output);
-
-      await app.stop();
-      app.dispose();
     });
   }
 }
