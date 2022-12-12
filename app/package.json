@@ -9,7 +9,7 @@
   "author": "pavlovdog_ <pavlovdog.moscow@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gaussian": "^1.1.0",
     "prom-client": "^11.5.3"
   },
